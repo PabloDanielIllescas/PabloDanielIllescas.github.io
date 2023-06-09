@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+html, body {
+    overflow-x: hidden;
+   background-color:#69a5a4 ;
+  }
+ 
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    align-items: center;
+    color: #66245b;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+}
+
+nav{
+    height: 35px;
+    color: #66245b;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    gap: 70px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+  }
+
+  .subtitulo{
+    display: flex;
+    background-color:#616382;
+    padding: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+  }
+
+  .cajas{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .oculto {
+    display: none !important;
+   }
+
+  img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .btn-tiempo-desayuno,
+  .btn-tiempo-almuerzo,
+  .btn-tiempo-cena{
+    display: inline-block;
+    padding: 10px 20px; 
+    background-image: url(pictures/add.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #a8c4a2;
+    text-align: center;
+    border: none;
+    margin: 20px;
+    }
+
+    .volver-desayuno,
+    .volver-almuerzo,
+    .volver-cena{
+      background-color: #69a5a4;
+      }
+
+    .tiempo-de-comida {
+        width: 300px; 
+        margin: 50px auto; 
+        text-align: center; 
+        background-color: #a8c4a2; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
+      }
+
+      footer{
+        display: flex;
+        justify-content: center;
+        font-size: large;
+        height: 50px;
+        align-items: center;
+        background-color: #e5eaa4;
+      }
+
+
+      /* Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba) */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .cajas{
+   gap:15px;
+  }
+
+  .tiempo-de-comida{
+    width: 250px;
+  }
+  
+}
+
+/* Pequeños dispositivos (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+  nav{
+    display: none;
+}
+
+main{
+  display: inline;
+}
+
+.cajas{
+  display:inline ;
+}
+
+}
+
+/* Dispositivos extra pequeños (teléfonos, 600px y abajo) */
+@media screen and (max-width: 600px) {
+  nav{
+    display: none;
+}
+
+main{
+  display: inline;
+}
+
+.cajas{
+  display:inline ;
+}
+
+  
+}

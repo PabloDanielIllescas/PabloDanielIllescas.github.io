@@ -1,0 +1,287 @@
+.body{
+/* display: grid;
+grid-template-columns: repeat(1, 1fr); */
+}
+
+.contenedorProductosDesayuno{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px 350px;
+    gap: 40px;
+    padding: 40px;
+    /*position: absolute; */
+   
+}
+.contenedorProductosAlmuerzo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px 350px;
+    gap: 40px;
+    padding: 40px;
+    /*position: absolute; */
+    
+}
+.contenedorProductosCena{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px 350px;
+    gap: 40px;
+    padding: 40px;
+    /*position: absolute; */
+}
+
+
+
+.contenedorVerPedido{
+    display: grid;
+    position: absolute;
+   }
+
+.contadorTotal{
+    background-color: crimson
+    }
+
+.producto{
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+    background-color: #a8c4a2;
+    border-radius: 4%;
+    transition: transform 0.3s ease-in-out;
+    height: 370px;
+}
+.producto:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+#ver-pedido{
+    background-color: #FFD93D;
+    width: 800px;
+
+}
+.detalles-carrito{
+    display: grid;
+    grid-template-columns: 300px 120px 130px 100px 50px;
+    grid-template-rows: 35px;
+    padding: 5px 50px;
+}
+.detalles-carrito:hover{
+    background-color: #ffce08;
+}
+
+.detalles-carrito>.btn-eliminar{
+     width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    background-image: url(pictures/trash-can.png);
+    background-repeat: no-repeat;
+    background-size:25px ;
+    border-style: none;
+
+}
+.detalles-carrito>.btn-restar{
+    width: 30px;
+   height: 30px;
+   text-align: center;
+   margin-left: 10px;
+   background-image: url(pictures/minus.png);
+   background-repeat: no-repeat;
+   background-size:25px ;
+   border-style: none;
+
+}
+.detalles-carrito>p{
+    padding-top: 8px;
+}
+
+/*Estilos cabecera carrito o boton de cerrar*/
+
+.cabeceraCarrito{
+    display: grid;
+    grid-template-columns: 650px 50px;
+    grid-template-rows: 43px;
+    padding: 5px 50px;
+    background-color: blue;
+}
+.btn-cerrar{
+    display: flex;
+    background-color: blue;
+    font-size: 35px;
+    background-image: url(pictures/cancel.png);
+    background-repeat: no-repeat;
+    background-size:25px ;
+    border-style: none;
+    margin: 8px;
+}
+.cabeceraCarrito>p{
+    color: black;
+    font-size: 30px;
+   background-color: blue;
+}
+
+
+
+
+/*Estilos ocular carrito*/
+.ocultarCarrito{
+    display: none;
+}
+
+#contador-pedido{
+    background-color: #582a18;
+    width: 800px;
+    margin: auto;
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
+}
+#precio-total-pedido{
+    background-color: #FFD93D;
+    width: 800px;
+    margin: auto;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+#confirmar-pedido {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: darkgoldenrod;
+  }
+
+  .btn-restar {
+    background-color: #FFD93D;
+  }
+  .btn-eliminar {
+    background-color: #FFD93D;
+  }
+
+  
+  .btn-confirmar {
+    border-style: none;
+    padding: 2%;
+    border-radius: 6%;
+    background-color: burlywood;
+    margin: 1%;
+  }
+
+  .btn-agregar {
+    border-style: none;
+    border-radius: 6%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #66245b;
+    font-weight: bold;
+  }
+
+  .precioTotal{
+    background-color: darkgoldenrod;
+  }
+
+
+      /* Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba) */
+      @media screen and (min-width: 600px) and (max-width: 900px) {
+        .contenedorProductosDesayuno{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            /*position: absolute; */
+
+        }
+        .contenedorProductosAlmuerzo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            /*position: absolute; */
+
+        }
+        .contenedorProductosCena{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            /*position: absolute; */
+
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 80px;
+            align-items: center;
+        }
+        .subtitulo{
+            display: flex;
+            background-color: slategray;
+            padding: 12px;
+            justify-content: center;
+            width: 100%;
+          }
+          .contenedorVerPedido{
+             width: 400px;
+             height: 350px;
+          }
+        
+      }
+   
+      
+      /* Dispositivos extra pequeños (teléfonos, 600px y abajo) */
+      @media screen and (max-width: 600px) {
+        .contenedorProductosDesayuno{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            /*position: absolute; */
+            
+        }
+        .contenedorProductosAlmuerzo{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            /*position: absolute; */
+            
+        }
+        .contenedorProductosCena{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 350px 350px;
+            gap: 40px;
+            padding: 40px;
+            position: absolute; 
+            
+        }
+        .subtitulo{
+            display: flex;
+            background-color: slategray;
+            padding: 12px;
+            justify-content: center;
+            width: 100%;
+          }
+          header{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 80px;
+            align-items: center;
+        }
+        .contenedorVerPedido{
+            width: 200px;
+            height: 200px;
+         }
+        
+      }
+
+   
